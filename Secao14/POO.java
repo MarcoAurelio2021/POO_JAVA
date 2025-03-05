@@ -6,6 +6,8 @@ public class POO {
         Carro carro = new Carro("Chefrolet", "Opala", motor);
         carro.exibirInfo();
 
+        
+
 
         // Herança
         Cachorro pitbull = new Cachorro("Duque");
@@ -42,6 +44,45 @@ public class POO {
         gerente.exibirDetalhes();
 
         System.out.println(gerente.calcularBonus());
+
+
+        // Classe Abstrata
+        // Uma classe abstrata não pode ser instanciada
+        // Uma classe abstrata pode ter métodos abstratos
+        // Uma classe abstrata pode ter métodos concretos
+        // Uma classe abstrata pode ter atributos
+        // Uma classe abstrata pode ter construtores
+        // Há uma diferença na hora de fazer as invocações;
+
+        instrumentoMusical violao = new Violao("Violão");
+        instrumentoMusical bateria = new Bateria("Bateria");
+
+        violao.exibirDetalhes();
+        violao.tocar();
+
+        bateria.exibirDetalhes();
+        bateria.tocar();
+
+        // interfaces
+        // Necessário tipar elas, semelhante a classe abstrata
+        // Uma interface não pode ter atributos
+        // Uma interface não pode ter construtores
+        // Dês de JAVA 8 as interfaces podem ter métodos concretos com o uso do default
+        // Uma interface pode ter métodos abstratos
+
+        Pagamento cartao = new cartaoCredito();
+        Pagamento transBanc = new transferenciaBancaria();
+
+        cartao.processarPagamento(200);
+        cartao.imprimirRecibo(200);
+
+        transBanc.processarPagamento(320);
+        transBanc.imprimirRecibo(320);
+
+        // Multiplas interfaces
+        // Uma classe pode implementar várias interfaces
+        // Uma interface pode herdar de outra interface
+        // Ao usar multiplas interfaces, podemos usar a propria  classe como tipo do objeto;
     }
 
 }
