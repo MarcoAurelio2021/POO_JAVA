@@ -1,4 +1,6 @@
 package Secao14;
+
+
 public class POO {
     public static void main(String[] args) {
         // Criando o motor
@@ -83,6 +85,23 @@ public class POO {
         // Uma classe pode implementar várias interfaces
         // Uma interface pode herdar de outra interface
         // Ao usar multiplas interfaces, podemos usar a propria  classe como tipo do objeto;
+
+        // testar idade
+        verificarIdade(27);
     }
+
+    public static void verificarIdade (int idade) {
+   
+        if (idade < 18)
+        {
+           System.out.println("Menor de idade");
+        } else if (idade >= 18 && idade <= 64) {
+           System.out.println("Adulto");
+        } else if (idade > 65) {
+           System.out.println("Idoso");
+        }
+            
+       }
+       
 
 }
