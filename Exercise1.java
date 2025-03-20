@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Exercice {
+public class Exercise1 {
      public static void main(String[] args) {
        // Exercise exercicio = new Exercise();
         int n = 6;

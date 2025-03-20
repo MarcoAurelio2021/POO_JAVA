@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Exercicio {
+public class Exercise {
    /*  public static void main(String[] args) {
         int [] vetorOriginal = {1,2,3,4,5};
         int [] vetorCopia = new int[vetorOriginal.length];
@@ -18,6 +18,20 @@ public class Exercicio {
     */
 
     public static void main(String[] args) {
+        // Sortear numero
+        int numeroSorteado = (int) (Math.random() * 80);
+        
+        int[] numerosEscolhidos = new int[10];
+
+        for (int i = 0; i < numerosEscolhidos.length; i++) {
+            numerosEscolhidos[i] = (int) (Math.random() * 80);
+        }
+
+        // ordenar lista menor para o maior
+        Arrays.sort(numerosEscolhidos);
+
+        System.out.println(Arrays.toString(numerosEscolhidos));
+        
         int [] vetorOriginal = {1,2,3,4,5};
         int [] vetorCopia = new int[vetorOriginal.length];
         vetorCopia = inverterArray(vetorOriginal);
